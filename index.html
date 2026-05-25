@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Software developer resume for Cristhian Caicedo."
+      content="Resume of Cristhian Caicedo, a software developer focused on Flutter, Android, React, Next.js, Python, AWS, SQL, and GraphQL."
     />
     <title>R&eacute;sum&eacute; | Cristhian Caicedo</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Built with mobile craft, full-stack discipline, inventory logic, and suspiciously meaningful commits. -->
     <main>
       <div class="resume">
-        <div class="container">
+        <section class="container" aria-labelledby="contact-heading">
           <div class="resume__block">
-            <h1 class="contact-info__header">Cristhian Caicedo</h1>
+            <div class="resume__actions">
+              <button
+                class="download-button"
+                type="button"
+                onclick="window.print()"
+                aria-label="Download or print Cristhian Caicedo resume"
+              >
+                Download CV
+              </button>
+            </div>
+
+            <h1 class="contact-info__header" id="contact-heading">
+              Cristhian Caicedo
+            </h1>
             <h3 class="contact-info__sub-header">Software Developer</h3>
 
             <div class="contact_info_container fh">
@@ -24,8 +39,12 @@
                   href="tel:+573207542687"
                   rel="author"
                   class="contact-info__item"
+                  aria-label="Call Cristhian Caicedo at +57 320 754 2687"
                 >
-                  <div class="contact-info__item-icon-wrapper"></div>
+                  <div
+                    class="contact-info__item-icon-wrapper"
+                    aria-hidden="true"
+                  ></div>
                   <span>Phone: (+57) 320 754 2687</span>
                 </a>
 
@@ -33,8 +52,12 @@
                   href="mailto:cristhian.caicedo130@gmail.com"
                   rel="author"
                   class="contact-info__item"
+                  aria-label="Send email to Cristhian Caicedo"
                 >
-                  <div class="contact-info__item-icon-wrapper"></div>
+                  <div
+                    class="contact-info__item-icon-wrapper"
+                    aria-hidden="true"
+                  ></div>
                   <span>cristhian.caicedo130@gmail.com</span>
                 </a>
               </div>
@@ -52,24 +75,37 @@
                   href="https://github.com/krysth130"
                   rel="author"
                   class="contact-info__item"
+                  aria-label="Open Cristhian Caicedo GitHub profile"
                 >
-                  <div class="contact-info__item-icon-wrapper"></div>
+                  <div
+                    class="contact-info__item-icon-wrapper"
+                    aria-hidden="true"
+                  ></div>
                   <span>github.com/krysth130</span>
                 </a>
 
-                <a href="" rel="author" class="contact-info__item">
-                  <div class="contact-info__item-icon-wrapper"></div>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Medellin%2C%20Colombia"
+                  rel="author"
+                  class="contact-info__item"
+                  aria-label="View Cristhian Caicedo location in Medellin, Colombia"
+                >
+                  <div
+                    class="contact-info__item-icon-wrapper"
+                    aria-hidden="true"
+                  ></div>
                   <span>Street 3C, Carrera 78B - 71, Medellin, Colombia</span>
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container" aria-labelledby="intro-heading">
           <div class="resume__block">
+            <h2 class="visually-hidden" id="intro-heading">Introduction</h2>
             <div class="intro">
-              <div class="intro__icon-wrapper"></div>
+              <div class="intro__icon-wrapper" aria-hidden="true"></div>
               <p class="intro_text">
                 I am an experienced software developer focused on mobile
                 development with Flutter and Android using Kotlin, as well as
@@ -81,12 +117,12 @@
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container" aria-labelledby="skills-heading">
           <div class="resume__block">
             <div class="skills">
-              <h3 class="skills__header">Skills</h3>
+              <h2 class="skills__header" id="skills-heading">Skills</h2>
               <p class="skills__text">
                 Flutter, Dart, Kotlin, Android, TypeScript, JavaScript,
                 React.js, Next.js, Redux, Node.js, Express, Python, NestJS,
@@ -96,15 +132,17 @@
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="container">
+        <section class="container" aria-labelledby="experience-heading">
           <div class="resume__block">
             <div class="main-info fh">
               <div class="experiences">
-                <h3 class="experiences__header">Experience</h3>
+                <h2 class="experiences__header" id="experience-heading">
+                  Experience
+                </h2>
 
-                <div class="experiences__company">
+                <article class="experiences__company">
                   <div class="experiences__company-header">
                     <span class="experiences__company-header-durability">
                       Present
@@ -189,14 +227,22 @@
                       </li>
                     </ul>
                   </div>
-                </div>
+                </article>
               </div>
 
-              <div class="additional-info fv">
-                <div class="additional-info__education">
-                  <h3 class="additional-info__education-header">Education</h3>
+              <aside class="additional-info fv" aria-label="Additional resume information">
+                <section
+                  class="additional-info__education"
+                  aria-labelledby="education-heading"
+                >
+                  <h2
+                    class="additional-info__education-header"
+                    id="education-heading"
+                  >
+                    Education
+                  </h2>
 
-                  <div class="additional-info__education-university">
+                  <article class="additional-info__education-university">
                     <span
                       class="additional-info__education-university-durability"
                     >
@@ -209,9 +255,9 @@
                     <p class="additional-info__education-university-name">
                       SENA - Centro de Servicios y Gestion Empresarial
                     </p>
-                  </div>
+                  </article>
 
-                  <div class="additional-info__education-university">
+                  <article class="additional-info__education-university">
                     <span
                       class="additional-info__education-university-durability"
                     >
@@ -223,9 +269,9 @@
                     <p class="additional-info__education-university-name">
                       Technical Training Program
                     </p>
-                  </div>
+                  </article>
 
-                  <div class="additional-info__education-university">
+                  <article class="additional-info__education-university">
                     <span
                       class="additional-info__education-university-durability"
                     >
@@ -237,23 +283,37 @@
                     <p class="additional-info__education-university-name">
                       Smart Academy
                     </p>
-                  </div>
-                </div>
+                  </article>
+                </section>
 
-                <div class="additional-info__languages">
-                  <h3 class="additional-info__languages-header">Languages</h3>
+                <section
+                  class="additional-info__languages"
+                  aria-labelledby="languages-heading"
+                >
+                  <h2
+                    class="additional-info__languages-header"
+                    id="languages-heading"
+                  >
+                    Languages
+                  </h2>
                   <p class="additional-info__languages-item">
                     Spanish - Native
                   </p>
                   <p class="additional-info__languages-item">
                     English - In progress
                   </p>
-                </div>
+                </section>
 
-                <div class="additional-info__languages">
-                  <h3 class="additional-info__languages-header">
+                <section
+                  class="additional-info__languages"
+                  aria-labelledby="technical-focus-heading"
+                >
+                  <h2
+                    class="additional-info__languages-header"
+                    id="technical-focus-heading"
+                  >
                     Technical Focus
-                  </h3>
+                  </h2>
                   <p class="additional-info__languages-item">
                     Mobile development with Flutter and Android using Kotlin.
                   </p>
@@ -269,11 +329,11 @@
                     Cloud services, databases, CI/CD, and software quality
                     practices.
                   </p>
-                </div>
-              </div>
+                </section>
+              </aside>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </main>
   </body>
